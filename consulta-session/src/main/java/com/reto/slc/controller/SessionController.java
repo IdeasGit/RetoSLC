@@ -17,11 +17,6 @@ public class SessionController {
 
 	@PostMapping("/getSession")
 	public SessionData getSession(@RequestBody SessionData session) {
-		System.out.println(session.getTransactionTracker());
-		System.out.println(session.getSessionTracker());
-		System.out.println(session.getChannel());
-
-
         return sessionService.getSession(session.getSessionTracker());
 	}
 
