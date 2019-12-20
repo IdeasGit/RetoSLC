@@ -1,5 +1,7 @@
 package com.reto.slc.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -8,6 +10,7 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "SESSION")
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class SessionData implements Serializable {
 
 	private static final long serialVersionUID = 7861371462843205852L;
