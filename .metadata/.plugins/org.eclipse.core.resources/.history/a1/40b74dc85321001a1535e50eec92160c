@@ -1,0 +1,5 @@
+package com.reto.slc.repository;
+
+public interface ISessionRepository {
+
+}

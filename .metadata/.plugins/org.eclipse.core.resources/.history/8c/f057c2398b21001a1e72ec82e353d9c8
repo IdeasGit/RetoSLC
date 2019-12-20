@@ -1,0 +1,22 @@
+package com.reto.slc.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.reto.slc.model.SessionData;
+import com.reto.slc.repository.ISessionRepository;
+
+@Service
+public class SessionService {
+	
+	/*@Autowired
+	private ISessionRepository sessionRepository;
+	
+	public SessionData getSession() {
+
+		SessionData sessionData = sessionRepository.session(1);
+		String s = sessionData.getSessionTracker();
+		
+		return sessionData;
+	}*/
+}

@@ -1,0 +1,28 @@
+package com.reto.slc.controller;
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.reto.slc.model.SessionData;
+
+@RestController
+@RequestMapping(path = "/session")
+public class SessionController {
+
+	@PostMapping("/getSession")
+	public SessionData getSession(SessionData session) {
+		System.out.println(session.getTransactionTracker());
+		System.out.println(session.getSessionTracker());
+		System.out.println(session.getChannel());
+
+		SessionData response = new SessionData();
+		response.setChannel("APP");
+		response.setSessionStatus("ACTIVE");
+		response.setSessionTracker("session12345 ");
+		response.setTransactionTracker("transction2131312");
+		
+		return response;
+	}
+}

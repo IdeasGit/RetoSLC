@@ -1,0 +1,7 @@
+package com.reto.slc.model;
+
+import java.io.Serializable;
+
+public class SessionData implements Serializable {
+
+}

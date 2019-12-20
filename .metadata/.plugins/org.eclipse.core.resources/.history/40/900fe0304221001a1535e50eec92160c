@@ -1,0 +1,5 @@
+package com.reto.slc.model;
+
+public class SessionData {
+
+}

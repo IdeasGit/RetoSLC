@@ -1,0 +1,11 @@
+package com.reto.slc.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.reto.slc.model.SessionData;
+
+@Repository
+public interface ISessionRepository extends JpaRepository<SessionData,String> {
+	
+}

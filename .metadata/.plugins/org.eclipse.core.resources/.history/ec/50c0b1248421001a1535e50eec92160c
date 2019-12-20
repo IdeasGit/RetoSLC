@@ -1,0 +1,40 @@
+package com.reto.slc.model;
+
+import java.io.Serializable;
+
+public class SessionData implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 7861371462843205852L;
+	private String transactionTracker;
+	private String sessionTracker;
+	private String channel;
+	private String sessionStatus;
+	public String getTransactionTracker() {
+		return transactionTracker;
+	}
+	public void setTransactionTracker(String transactionTracker) {
+		this.transactionTracker = transactionTracker;
+	}
+	public String getSessionTracker() {
+		return sessionTracker;
+	}
+	public void setSessionTracker(String sessionTracker) {
+		this.sessionTracker = sessionTracker;
+	}
+	public String getChannel() {
+		return channel;
+	}
+	public void setChannel(String channel) {
+		this.channel = channel;
+	}
+	public String getSessionStatus() {
+		return sessionStatus;
+	}
+	public void setSessionStatus(String sessionStatus) {
+		this.sessionStatus = sessionStatus;
+	}
+
+}
