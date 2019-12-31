@@ -8,12 +8,12 @@ import com.reto.slc.repository.ISessionRepository;
 
 @Service
 public class SessionService implements ISessionService {
-	
+
 	@Autowired
 	private ISessionRepository sessionRepository;
 
     public SessionData saveSession(SessionData sessionData) {
-	        return this.sessionRepository.save(sessionData);
+        return this.sessionRepository.save(sessionData);
     }
 
     public SessionData getSession(String sessionId) {
